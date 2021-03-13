@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(
+    to right,
+    rgba(222, 207, 0, 0.8),
+    rgba(7, 7, 236, 0.3),
+    rgba(212, 0, 159, 0.8)
+  );
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  border: 1px solid green;
+  width: 70vw;
+  height: 85vh;
+  margin: 30px auto;
+  box-shadow: 0px 5px 50px black;
+}
+h1,
+p {
+  text-transform: capitalize;
+  padding: 30px;
+}
+h1 {
+  margin-top: 0;
+  padding-top: 0;
+  text-shadow: 0px 2px 5px;
+}
+button {
+  padding: 15px;
+  transition: all 2s linear;
+  outline: none;
+  border-radius: 10px;
+  background-color: aqua;
+}
+button:hover {
+  background-color: slategray;
+  border-radius: 25px;
+}
+#passwordplace,
+#requiredLength {
+  outline: none;
+  border-radius: 5px;
+}
+#requiredLength::placeholder {
+  color: darkgoldenrod;
+}
